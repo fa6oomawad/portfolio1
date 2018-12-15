@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+	#header {
+ position: fixed;
+  right: 0;
+  left:0;
+       z-index: 1;
+	}
+		
+		#welcome-section {
+			min-height: 100vh; 
+			background-color: grey;
+display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom right, #48c9c5, white);
+		}
+		#welcome-section h1 {
+color: white;
+font-family: Bookman;
+		}
+		#welcome-section p {
+		padding-top: 60px;
+		padding-left:60px;
+		color: grey;
+		}
+		#navbar {
+background-color: #bcc6c6;
+		}
+		#projects h1 {
+			padding-top:100px;
+			color:grey;
+			font-family: Georgia;
+			font-weight: bold;
+		}
+		.project-tile {
+			width: 500px;
+			height:300px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+
+		}
+		.box{
+			width: 500px;
+			height:300px;
+			border-color: grey;
+			border-style: solid; 
+			border-width: 8px;
+			opacity:1;
+			border-radius: 5px;
+					}
+					
+		 .box a img{
+		 	width: 100%;
+		 	height:100%;
+			 object-fit: fill;
+		}
+
+		 .project-tile p {
+			font-family: Palatino;
+color: grey;
+			padding-top: 20px;
+			text-align: center;
+			font-weight: bold;
+			font-size: 20px;
+		}
+
+		.box:hover{
+opacity:0.5;
+					}
+		#footer {
+			background-color: grey;
+			width: 100%;
+			height: 100%;
+	padding: 3%;
+	margin-top: 100px;
+		}
+
+	
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	color: white;
+}
+.fa:hover {
+	color: #48c9c5;
+	text-decoration: none;
+}
+
+@media (max-width: 600px){
+
+	.fa {
+	padding: 20px;
+	font-size: 10px;
+	color: white;
+}
+	}
+
+		
+	</style>
+</head>
+<body>
+<header id="header">
+	
+
+<nav class="navbar navbar-expand navbar-light " id="navbar"> 
+  <a class="navbar-brand" href="#">
+    <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+  
+  </a>
+   <div class="collapse navbar-collapse " id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">My work</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#footer">Contact me</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+</header>
+
+<div class="container-fluid" id="welcome-section">
+	<h1>Hi,I'm Fatima :) </h1> 
+		<p> on my way to become The amazing web developer ;) </p>
+
+</div>
+
+<div class="container" id="projects">
+	<h1>My Work</h1>
+	<div class="row">
+		<div  class="col-lg-6">
+			
+			<div  class="project-tile" >
+				<p> Documentation page</p>
+				<div class="box">
+				<a href="https://fa6oomawad.github.io/documantation/"><img src="img/doc.png"></a>
+</div>
+			</div>
+		</div>
+
+		<div  class="col-lg-6">
+			<div class="project-tile">
+				<p> Inspire</p>
+				<div class="box">
+
+				<a href=""><img src="img/inspire.png"></a></div>
+			</div>
+		</div>
+	</div>
+
+<!-- second row -->
+
+	<div class="row">
+		<div  class="col-lg-6">
+			
+			<div  class="project-tile" >
+				<p> Product Landing</p>
+				<div class="box">
+
+				<a href="https://fa6oomawad.github.io/Apple-product/"><img src="img/product.png"></a>
+</div>
+			</div>
+		</div>
+
+		<div  class="col-lg-6">
+			<div class="project-tile">
+				<p> Twitter's survey form</p>
+				<div class="box">
+
+				<a href="https://fa6oomawad.github.io/surveyform/"><img src="img/survey.png"></a>
+		</div>	</div>  
+		</div>
+	</div>
+
+
+	<!-- third row -->
+	<div class="row">
+		<div  class="col-lg-6">
+			
+			<div  class="project-tile" >
+				<p> Qoute Machine</p>
+				<div class="box">
+
+				<a href="https://fa6oomawad.github.io/qouteMachine/"><img src="img/qoutes.png"></a>
+</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<footer class="container-fluid text-center" id="footer">
+	<div class="row">
+				<div class="col-sm-4">
+								<h3>Contact Me </h3>
+<p style="font-weight:bold;"> you can reach me in one of these social media accounts</p>
+</div>
+
+		<div class="col-sm-4">
+			<a href="https://www.facebook.com/fatima.a.mukhtar" class="fa fa-facebook"></a>
+			<a href="mailto:fatimamuk0@gmail.com?Subject=Hello%20again" target="_top" class="fa fa-google"></a>
+			<a href="https://github.com/fa6oomawad" class="fa fa-github" id="profile-link" target="_blank"></a>
+
+		</div>
+		
+	</div>
+</footer>
+
+
+</body>
+</html>      
