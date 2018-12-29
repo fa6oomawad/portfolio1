@@ -224,12 +224,10 @@ opacity:0.5;
 
 <script>
 var branch=$(".nav-link");
-branch.each(function (index,element){
-var e= element[i];
-var $e=$("e");
-$e.css("color","purple");
-});
+branch.on("click",function(event){
 
+	branch.css("color","red")
+})
 </script>
 </body>
 </html>      
