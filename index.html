@@ -141,6 +141,31 @@ opacity:0.5;
 
 <div class="container" id="projects">
 	<h1>My Work</h1>
+
+
+
+	<div class="row">
+		<div  class="col-lg-6">
+			
+			<div  class="project-tile" >
+				<p> Calculator</p>
+				<div class="box">
+				<a href="https://fa6oomawad.github.io/documantation/"><img src="img/calculator.PNG" alt="website's screenshot" ></a>
+</div>
+			</div>
+		</div>
+
+		<div  class="col-lg-6">
+			<div class="project-tile">
+				<p> Memory cards</p>
+				<div class="box">
+
+				<a href=""><img src="img/memory.PNG" alt="website's screenshot"></a></div>
+			</div>
+		</div>
+	</div>
+
+
 	<div class="row">
 		<div  class="col-lg-6">
 			
@@ -199,6 +224,16 @@ opacity:0.5;
 </div>
 			</div>
 		</div>
+		<div  class="col-lg-6">
+			
+			<div  class="project-tile" >
+				<p>Slide show</p>
+				<div class="box">
+
+				<a href="https://fa6oomawad.github.io/qouteMachine/"><img src="img/slides.PNG" alt="website's screenshot"></a>
+</div>
+			</div>
+		</div>
 	</div>
 
 </div>
@@ -223,11 +258,14 @@ opacity:0.5;
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script>
-var branch=$(".nav-link");
-branch.on("click",function(event){
-	$(this).css("color","red");
-	console.log(event.target);
-})
+
+	var url = window.location;
+        $('ul.nav a[href="'+ url +'"]').parent().addClass('active');
+        $('ul.nav a').filter(function() {
+             return this.href == url;
+        }).parent().addClass('active');
+
+
 </script>
 </body>
 </html>      
