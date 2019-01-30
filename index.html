@@ -84,9 +84,12 @@ opacity:0.5;
 	margin-top: 100px;
 		}
 
-	
+	.actively {
+		color:rgb(0, 0, 0) !important ;
+		
+	}
 .fa {
-	padding: 20px;
+	padding: 50px;
 	font-size: 30px;
 	color: white;
 }
@@ -97,9 +100,9 @@ opacity:0.5;
 
 @media (max-width: 600px){
 
-	.fa {
-	padding: 20px;
-	font-size: 10px;
+	 .fa {
+	
+	font-size: 20px;
 	color: white;
 }
 	}
@@ -119,7 +122,7 @@ opacity:0.5;
    <div class="collapse navbar-collapse " id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item ">
-        <a class="nav-link" href="#">Home </a>
+        <a class="nav-link actively" href="#welcome-section">Home </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#projects">My work</a>
@@ -263,13 +266,31 @@ opacity:0.5;
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script>
+	
+$("ul li").on("click",function(e){
+console.log(e);
+console.log(e.target.href);
+var locationn= e.target.href;
+var item= e.currentTarget.childNodes[1];
+console.log(item );
 
-	var url = window.location;
-        $('ul.nav a[href="'+ url +'"]').parent().addClass('active');
-        $('ul.nav a').filter(function() {
-             return this.href == url;
-        }).parent().addClass('active');
+	if(e.target.href===locationn){
+		var allitems=document.getElementsByClassName("actively");
+$(allitems).removeClass("actively");
+		$(item).addClass("actively");
+		
 
+	}
+	
+	
+
+	
+		
+
+
+	
+
+});
 
 </script>
 </body>
